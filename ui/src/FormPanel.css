@@ -1,0 +1,35 @@
+section {
+    margin: 24px auto;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: #1C2468;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+textarea {
+    width: 320px;
+    height: 140px;
+    border-radius: 6px;
+}
+
+button {
+    font-family: 'poppinsbold', sans-serif;
+    border-radius: 6px;
+    width: 80px;
+    height: 32px;
+    margin: 0 auto;
+    background-color: #79aa8b;
+    color: #fff;
+}
+
+button:disabled {
+    background-color: #dae4d9;
+}

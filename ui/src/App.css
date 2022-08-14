@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  background-color: #faf8f3;
+  width: 800px;
+  padding-bottom: 32px;
+}
+
+header {
+  color: #1C2468;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'poppinsbold';
+  src: url('assets/fonts/poppins-bold-webfont.woff2') format('woff2'),
+  url('assets/fonts/poppins-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: 'poppinsbold', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
