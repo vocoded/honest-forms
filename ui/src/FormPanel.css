@@ -12,12 +12,15 @@ label {
     font-weight: bold;
     font-size: 1.1rem;
     margin-bottom: 8px;
+    max-width: 360px;
 }
 
 textarea {
+    font-family: 'poppinsbold', sans-serif;
     width: 320px;
     height: 140px;
     border-radius: 6px;
+    padding: 8px;
 }
 
 button {
@@ -28,6 +31,8 @@ button {
     margin: 0 auto;
     background-color: #79aa8b;
     color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 button:disabled {

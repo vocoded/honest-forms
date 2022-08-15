@@ -1,8 +1,10 @@
-import express from "express";
+import express from 'express';
 import FormsDb from './db';
 import Form from './models/Form';
 import Answer from './models/Answer';
+
 const app = express();
+app.use(express.json());
 
 const Routes = {
   SessionForm: '/api/v1/users/:email/sessions/:sessionId/form',
@@ -45,7 +47,7 @@ app.get(Routes.SessionForm, function (req, res) {
 
 app.post(Routes.SessionForm, function (req, res) {
   const { email, sessionId } = req.params;
-  // TODO: Populate answers from JSON payload
+  // TODO: Populate answers from JSON payload in req.body
   const answers = new Array<Answer>();
   db.submitFormResponse(answers);
   res.send(`Creating form response for user ${email} in session ${sessionId}`);

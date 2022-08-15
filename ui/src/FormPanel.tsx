@@ -4,9 +4,10 @@ import './FormPanel.css';
 
 interface IFormPanelProps {
   form: Form;
+  onSubmit: (answers: Array<Answer>) => void;
 }
 
-export default function FormPanel({ form }: IFormPanelProps) {
+export default function FormPanel({ form, onSubmit }: IFormPanelProps) {
   const [submitEnabled, setSubmitEnabled] = useState(false);
   const [answers, setAnswers] = useState<Array<Answer>>([]);
 
@@ -35,8 +36,7 @@ export default function FormPanel({ form }: IFormPanelProps) {
   };
 
   const onSubmitResponse = function() {
-    alert('Responses saved!');
-    // TODO: Submit form, signal to parent
+    onSubmit(answers);
   };
 
   return (

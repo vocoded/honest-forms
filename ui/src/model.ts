@@ -1,6 +1,11 @@
 export class Question {
-  id: number = 0;
-  text: string = '';
+  readonly id: number;
+  readonly text: string;
+
+  constructor(id: number, text: string) {
+    this.id = id;
+    this.text = text;
+  }
 }
 
 export class Answer {

@@ -1,0 +1,9 @@
+.Toast {
+    border: 1px solid red;
+    height: 32px;
+    line-height: 32px;
+    background: lightpink;
+    margin: 0 80px;
+    font-size: .8rem;
+    color: #333;
+}
