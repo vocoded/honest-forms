@@ -1,5 +1,9 @@
 # Honest Forms
 
+## Pre-reqs
+* node 16.x (`nvm` recommended)
+
+## Installation
 ```
 npm i && cd ui && npm i
 npm run build && npm run start 
