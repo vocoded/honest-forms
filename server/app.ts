@@ -35,7 +35,7 @@ app.get(Routes.SessionForm, function (req, res) {
   const { email, sessionId } = req.params;
   db.getForm(email, sessionId).then((form: Form | null) => {
     if (form === null) {
-      res.sendStatus(400);
+      res.sendStatus(404);
     } else {
       res.json(form);
     }
